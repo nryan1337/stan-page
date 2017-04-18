@@ -8,18 +8,54 @@ img {
   height:200px;
 }
 
-.column {
-  float:left;
-  width: 300px;
-  padding: 10px;
-  margin: 10px;
+@media screen and (min-width: 700px) {
+  .column {
+    float: left;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .sidebar {
+    width: 30%;
+    float: right;
+    background-color: orange;
+    border: 2px solid red;
+    padding: 6px;
+    margin: 10px;
+  }
 }
 
-.sidebar {
-  width: 30%;
-  float: right;
-  background-color: orange;
-  border: 2px solid red;
-  padding: 6px;
-  margin: 10px;
+@media screen and (min-width: 480px) and (max-width: 700px) {
+  .column {
+    float: left;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .sidebar {
+    width: 50%;
+    float: right;
+    background-color: orange;
+    border: 2px solid red;
+    padding: 6px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 300px) {
+  .column {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .sidebar {
+    width: 80%;
+    background-color: orange;
+    border: 2px solid red;
+    padding: 6px;
+    margin: 10px;
+  }
 }
